@@ -1,4 +1,4 @@
-package com.github.aglebov;
+package com.example.project.model;
 
 import org.immutables.value.Value;
 

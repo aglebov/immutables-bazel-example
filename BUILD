@@ -5,13 +5,6 @@ java_plugin(
     deps = [
         "@maven//:org_immutables_value_processor",
     ],
+    visibility = ["//visibility:public"],
 )
 
-java_library(
-    name = "compile",
-    srcs = glob(["src/**/*.java"]),
-    plugins = [":immutables-generate"],
-    deps = [
-        "@maven//:org_immutables_value_annotations",
-    ],
-)
